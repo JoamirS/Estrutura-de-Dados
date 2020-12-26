@@ -18,8 +18,6 @@ public class Arvore {
         // E por fim, percorrerá a 'caixinha' direita.
         buscapreordem(dado, raiz.direita);
         }
-        /* O Netbeans reclama se eu não retornar nada aqui. Então , retorno o
-        dado*/
         return dado;
 }
     // Em segundo lugar será feita a busca pós-ordem.
@@ -35,8 +33,6 @@ public class Arvore {
                 return dado;
             }
         }
-        /* O Netbeans reclama se eu não retornar nada aqui. Então , retorno o
-        dado*/
         return dado;
     }
     // Em terceiro lugar será feita a busca simétrica
@@ -52,16 +48,10 @@ public class Arvore {
         // E por último busca-se a 'caixinha' da raiz.direita.
             buscasimetrica(dado, raiz.direita);
         }
-        /* O Netbeans reclama se eu não retornar nada aqui, ele sugere que eu
-        retorne 0, mas faz muito mais sentido retornar o dado ao meu ver*/
         return dado;
         
     }
 }
-
-/* OBS: Todos os métodos ficaram como public int, porque o netbeans reclamava se
-eu colocasse public void, mas como ele retorna os dados, então percebi que não
-faria sentido colocar void. */
 
 /* Fonte de Pesquisa: 
 Github.com, Apostila Caelum Estrutura de Dados, Wikipedia.com,
